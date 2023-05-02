@@ -1,0 +1,22 @@
+
+syntax = "proto3";
+package polar_align;
+
+
+service PolarAlign {
+    rpc StartPolarAlign(Request) returns (stream PolarError) {}
+    rpc StopPolarAlign(Request) returns (Response) {}
+}
+
+message PolarError {
+    float ra = 1;
+    float dec = 2;
+}
+
+message Request{
+
+}
+
+message Response {
+    bool stopped = 1;
+}
