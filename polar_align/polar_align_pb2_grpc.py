@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import polar_align_pb2 as polar__align__pb2
+from . import polar_align_pb2 as polar__align__pb2
 
 
 class PolarAlignStub(object):

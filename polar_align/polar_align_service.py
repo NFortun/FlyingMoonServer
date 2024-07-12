@@ -36,6 +36,7 @@ class PolarAlignService:
         self.indiclient = indiclient
 
     def StartPolarAlign(self, request, context):
+        print("called")
         try:
             print("start polar align")
             self.polar_align_started = True
